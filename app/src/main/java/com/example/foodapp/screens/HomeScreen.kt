@@ -36,8 +36,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
 import com.example.foodapp.components.Categorias
+import com.example.foodapp.components.FoodList
 import com.example.foodapp.components.Header
+import com.example.foodapp.components.RestauranteList
 import com.example.foodapp.models.Categoria
+import com.example.foodapp.models.restaurantes
 import com.example.foodapp.ui.theme.FoodAppTheme
 import com.example.foodapp.ui.theme.colorIcono
 
@@ -54,9 +57,11 @@ fun HomeScreen(innerPadding: PaddingValues){
         //CATEGORIAS
         Categorias()
 
-        // LISTA DE RESTAURANTES
+        // Lista de Restaurantes
+        RestauranteList()
 
         // LISTA DE ALIMENTOS
+        FoodList()
     }
 }
 
